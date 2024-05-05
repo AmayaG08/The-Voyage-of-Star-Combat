@@ -17,9 +17,15 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_muro","order":1,"path":"objects/obj_muro/obj_muro.yy",},
+    {"name":"Room","order":1,"path":"rooms/Room/Room.yy",},
     {"name":"spr_fondo","order":2,"path":"sprites/spr_fondo/spr_fondo.yy",},
-    {"name":"spr_jugadorcaminandoiz","order":4,"path":"sprites/spr_jugadorcaminandoiz/spr_jugadorcaminandoiz.yy",},
-    {"name":"Sprite3","order":1,"path":"sprites/Sprite3/Sprite3.yy",},
+    {"name":"spr_fondo1","order":7,"path":"sprites/spr_fondo1/spr_fondo1.yy",},
+    {"name":"spr_j","order":4,"path":"sprites/spr_j/spr_j.yy",},
+    {"name":"spr_JCD","order":6,"path":"sprites/spr_JCD/spr_JCD.yy",},
+    {"name":"spr_jugador","order":5,"path":"sprites/spr_jugador/spr_jugador.yy",},
     {"name":"spr_piso","order":3,"path":"sprites/spr_piso/spr_piso.yy",},
+    {"name":"spr_suelo1","order":8,"path":"sprites/spr_suelo1/spr_suelo1.yy",},
+    {"name":"Sprite3","order":1,"path":"sprites/Sprite3/Sprite3.yy",},
   ],
 }
