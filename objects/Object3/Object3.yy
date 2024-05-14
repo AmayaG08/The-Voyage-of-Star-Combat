@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_muro",
-  "eventList":[],
+  "%Name":"Object3",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_muro",
+  "name":"Object3",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -26,11 +29,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"Sprite3",
-    "path":"sprites/Sprite3/Sprite3.yy",
+    "name":"spr_enemigo",
+    "path":"sprites/spr_enemigo/spr_enemigo.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

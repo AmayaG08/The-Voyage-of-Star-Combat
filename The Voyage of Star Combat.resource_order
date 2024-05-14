@@ -18,10 +18,11 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_muro","order":1,"path":"objects/obj_muro/obj_muro.yy",},
+    {"name":"Object3","order":2,"path":"objects/Object3/Object3.yy",},
     {"name":"Room","order":1,"path":"rooms/Room/Room.yy",},
-    {"name":"spr_fondo","order":2,"path":"sprites/spr_fondo/spr_fondo.yy",},
+    {"name":"spr_enemigo","order":9,"path":"sprites/spr_enemigo/spr_enemigo.yy",},
+    {"name":"spr_enemigocaminando","order":10,"path":"sprites/spr_enemigocaminando/spr_enemigocaminando.yy",},
     {"name":"spr_fondo1","order":7,"path":"sprites/spr_fondo1/spr_fondo1.yy",},
-    {"name":"spr_j","order":4,"path":"sprites/spr_j/spr_j.yy",},
     {"name":"spr_JCD","order":6,"path":"sprites/spr_JCD/spr_JCD.yy",},
     {"name":"spr_jugador","order":5,"path":"sprites/spr_jugador/spr_jugador.yy",},
     {"name":"spr_piso","order":3,"path":"sprites/spr_piso/spr_piso.yy",},
