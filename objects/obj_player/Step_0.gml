@@ -1,5 +1,3 @@
-// Evento Step
-
 #region Movimiento Horizontal
 // Para saber si el jugador se mueve para alguna dirección
 var hor = keyboard_check(vk_right) - keyboard_check(vk_left);
@@ -16,7 +14,7 @@ if (hor != 0) {
 }
 #endregion
 
-#region Gravedad y Salto
+#region Gravedad y Salto}
 // Aplicar gravedad
 vspeed += gravity_force;
 
@@ -34,11 +32,11 @@ if (!place_free(x, y + vspeed)) {
     vspeed = 0; // Detener movimiento vertical
 
     // Permitir el salto si el jugador está en el suelo
-    if (keyboard_check_pressed(vk_space)) {
+    if (keyboard_check_pressed(vk_up)) {
         vspeed = jump_speed;
         // Añadir impulso horizontal durante el salto
         if (hor != 0) {
-            x += hor * (move_speed / 2); // Aumenta el impulso horizontal
+            x += hor * (move_speed / 3); // Aumenta el impulso horizontal
         }
     }
 } else {
@@ -52,3 +50,30 @@ if (!place_free(x, y)) {
     }
 }
 #endregion
+
+// Controlar la invulnerabilidad
+if (invulnerable) {
+    invulnerable_timer -= 1;
+    if (invulnerable_timer <= 0) {
+        invulnerable = false;
+    }
+}
+
+// Actualizar el contador de vida del jugador
+vida = clamp(vida, 0, 3); // Asegura que la vida esté dentro del rango válido
+
+if (keyboard_check_pressed(vk_space)) {
+    // Disparar un proyectil
+    var bullet = instance_create_layer(x, y, "Instances", obj_proyectil);
+    
+    // Configurar la velocidad y dirección del proyectil
+    bullet.direction = image_xscale > 0 ? 0 : 180; // Cambiar la dirección según la orientación del jugador
+    bullet.speed = 10; // Velocidad del proyectil
+}
+
+if (vida <= 0) {
+    // Crear un objeto de Game Over
+    instance_create(0, 0, obj_game_ove);
+    
+    // Detener el jugador u otras acciones adicionales que desees realizar cuando se pierden todas las vidas
+}
